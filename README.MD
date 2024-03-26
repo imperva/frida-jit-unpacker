@@ -8,6 +8,8 @@ The FridaJitunPacker aims at supporting researchers and analysts in their attemp
 This tool uses the [Frida instrumentation toolkit](https://frida.re/) to inject scripts into [the CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime) and manipulate the behavior of the .NET executable to retrieve the original code.
 More precisely, this tool intercepts the communication between the CLR components in order retrieve the original IL code of a packed assembly.
 
+If you liked this software, please, add a GitHub star ⭐️, thank you !
+
 ### Assumption
 We assume here that the packer saves encrypted the orginal IL code of the application and overwrites the method information in the assembly. Then, whenever compilation of a specific method occurs, the packer intercepts the relevant APIs (CompileMethod, ResolveToken ...) in order to provide the original information, just in time, and replaces the fake data.
 
@@ -29,7 +31,7 @@ The software runs in Windows > 10 environment with x86_64 architecture
 
 ### Options
 The list of options and the information regarding their usage can be obtained via the `--help` option :
-```cmd
+```txt
 > dist/x64/fjp.exe --help
 
 ______      _      _            ___  _  _                  ______             _
