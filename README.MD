@@ -1,10 +1,10 @@
 
 ![Frida Jit Unpacker Logo](images/logo.png)
 
-# FridaJitunPacker
+# Frida-Jit-unPacker
 
 ## Description
-The FridaJitunPacker aims at supporting researchers and analysts in their attempts to understand the behavior of malicious software in order to provide a mitigation. 
+The Frida-Jit-unPacker aims at supporting researchers and analysts in their attempts to understand the behavior of malicious software in order to provide a mitigation. 
 This tool uses the [Frida instrumentation toolkit](https://frida.re/) to inject scripts into [the CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime) and manipulate the behavior of the .NET executable to retrieve the original code.
 More precisely, this tool intercepts the communication between the CLR components in order retrieve the original IL code of a packed assembly.
 
@@ -14,7 +14,7 @@ If you liked this software, please, add a GitHub star ⭐️, thank you !
 We assume here that the packer saves encrypted the orginal IL code of the application and overwrites the method information in the assembly. Then, whenever compilation of a specific method occurs, the packer intercepts the relevant APIs (CompileMethod, ResolveToken ...) in order to provide the original information, just in time, and replaces the fake data.
 
 ### Principle
-The unpacker uses Frida to place hooks to intercept the same components of the CLR (Method compilation, Token resolution, ...) but at a lower level than the packer. Moreover, it uses a stealthier approach by placing hooks not at the start or end of functions, but a bit before or a bit after in order to evade potential detection by the packer. 
+The unpacker uses Frida to place hooks to intercept the same components of the CLR (Method compilation, Token resolution, ...) but at a lower level than the packer. Moreover, it uses a stealthy approach by placing hooks not at the start or end of functions for example, but uses a smart hooking strategy to evade potential detection by the packer. 
 
 ## Requirements :
 The software runs in Windows > 10 environment with x86_64 architecture 
@@ -76,10 +76,10 @@ This tool shouldn't be used for any illegal activity.
 
 ## Contributions
 Become part of our community and engage with us on any topic through GitHub Discussions. 
-Should you encounter difficulties with FridaJitunPacker or wish to provide feedback, feel free to open an issue. Additional details can be found in our contribution documentation.
+Should you encounter difficulties with Frida-Jit-unPacker or wish to provide feedback, feel free to open an issue. Additional details can be found in our contribution documentation.
 
 ## More about Imperva
 
-Frida-Jit-Unpacker is an [Imperva](https://imperva.com) project.  
+Frida-Jit-unPacker is an [Imperva](https://imperva.com) project.  
 Imperva is a cybersecurity leader whose mission is to protect data and all paths to it. 
 Look [here](https://www.imperva.com/) to see Imperva products.
