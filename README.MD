@@ -67,12 +67,11 @@ optional arguments:
  
 
 ## Disclaimer:
-This tool shouldn't be used for any illegal activity.
+This tool should be used solely for legal and ethical purposes.
 
 ## Warning
 1. Frida is often flagged wrongly by anti-viruses. 
 2. It's obviously recommended to run any analysis in a dedicated VM for malware analysis. 
-
 
 ## Contributions
 Become part of our community and engage with us on any topic through GitHub Discussions. 
