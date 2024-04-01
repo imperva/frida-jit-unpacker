@@ -1,5 +1,5 @@
 
-![Frida Jit Unpacker Logo](images/logo.png)
+![Frida Jit Unpacker Logo](images/logo_small.png)
 
 # Frida-Jit-unPacker
 
