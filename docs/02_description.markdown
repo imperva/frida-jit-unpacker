@@ -20,4 +20,7 @@ If you liked this software, please, add a GitHub star ⭐️, thank you !
 We assume here that the packer saves encrypted the orginal IL code of the application and overwrites the method information in the assembly. Then, whenever compilation of a specific method occurs, the packer intercepts the relevant APIs (CompileMethod, ResolveToken ...) in order to provide the original information, just in time, and replaces the fake data.
 
 # Principle
-The unpacker uses Frida to place hooks to intercept the same components of the CLR (Method compilation, Token resolution, ...) but at a lower level than the packer. Moreover, it uses a stealthy approach by placing hooks not at the start or end of functions for example, but uses a smart hooking strategy to evade potential detection by the packer. 
+The unpacker runs the sample and uses Frida to place hooks and intercept the components of the CLR (Method compilation, Token resolution, ...), at a lower level than the packer. Moreover, it uses a stealthy approach by placing hooks not at the start or end of functions for example, but uses a smart hooking strategy to evade potential detection by the packer. 
+
+# Smart Hooking Strategy
+The program uses Frida to disassemble CLR functions and place hooks as far as possible from packer monitoring points (start address of the function for example) while still collecting their input.
