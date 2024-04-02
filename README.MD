@@ -4,8 +4,6 @@
 # Frida-Jit-unPacker
 
 - [Description](#description)
-- [Assumption](#assumption)
-- [Principle](#principle)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
