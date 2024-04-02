@@ -71,7 +71,13 @@ This tool should be used solely for legal and ethical purposes.
 
 ## Warning
 1. Frida is often flagged wrongly by anti-viruses. 
-2. It's obviously recommended to run any analysis in a dedicated VM for malware analysis. 
+2. It's obviously recommended to run any analysis in a dedicated VM for malware analysis. Imperva is not responsible for any consequence of the usage of the tool. 
+
+## Documentation
+You can generate the documentation server by downloading the `docs` folder and running the following in the `_site` folder :
+```txt
+> python -m http.server 8000
+```
 
 ## Contributions
 Become part of our community and engage with us on any topic through GitHub Discussions. 
