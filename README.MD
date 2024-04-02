@@ -18,7 +18,6 @@ The unpacker uses Frida to place hooks to intercept the same components of the C
 
 ## Requirements :
 The software runs in Windows > 10 environment with x86_64 architecture.
-The sofware requires an active Internet connection.
 
 ## Installation
 - Download the archive release_1.0_x64.zip from the release section and extract it anywhere in your environment.
@@ -85,7 +84,7 @@ Become part of our community and engage with us on any topic through GitHub Disc
 Should you encounter difficulties with Frida-Jit-unPacker or wish to provide feedback, feel free to open an issue. Additional details can be found in our contribution documentation.
 
 ## Telemetry
-The tool collects basic telemetry regarding execution in order to improve its efficiency in the future. (file size, header information, file hashes ...)
+The tool collects basic telemetry regarding execution in order to improve its efficiency in the future. (file size, header information, file hashes ...). Therefore, the software requires an active Internet connection.
 
 ## More about Imperva
 
