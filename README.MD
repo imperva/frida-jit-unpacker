@@ -3,6 +3,20 @@
 
 # Frida-Jit-unPacker
 
+- [Description](#description)
+- [Assumption](#assumption)
+- [Principle](#principle)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+- [Disclaimer](#disclaimer)
+- [Warning](#warning)
+- [Documentation](#documentation)
+- [Contributions](#contributions)
+- [Telemetry](#telemetry)
+- [More about Imperva](#more-about-imperva)
+
 ## Description
 The Frida-Jit-unPacker aims at helping researchers and analysts understand the behavior of malicious .NET packed samples in order to provide a mitigation. 
 This tool uses the [Frida instrumentation toolkit](https://frida.re/) to inject scripts into [the CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime) and manipulate the behavior of the .NET executable to retrieve the original code.
