@@ -15,4 +15,4 @@ If you find a bug in the software, please check our GitHub Issues to see if it h
 If you have ideas for new features or improvements, please use GitHub Discussions to share them with the community. This allows us to collaborate on the idea and assess its feasibility.
 
 # Documentation: 
-If you see an area that needs improvement or have suggestions for new content, please let us know or contribute directly by editing the documentation.
+If you see an area that needs improvement or have suggestions for new content, please let us know.

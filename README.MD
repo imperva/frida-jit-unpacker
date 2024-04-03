@@ -3,6 +3,18 @@
 
 # Frida-Jit-unPacker
 
+- [Description](#description)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+- [Disclaimer](#disclaimer)
+- [Warning](#warning)
+- [Documentation](#documentation)
+- [Contributions](#contributions)
+- [Telemetry](#telemetry)
+- [More about Imperva](#more-about-imperva)
+
 ## Description
 The Frida-Jit-unPacker aims at helping researchers and analysts understand the behavior of malicious .NET packed samples in order to provide a mitigation. 
 This tool uses the [Frida instrumentation toolkit](https://frida.re/) to inject scripts into [the CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime) and manipulate the behavior of the .NET executable to retrieve the original code.
@@ -17,10 +29,15 @@ We assume here that the packer saves encrypted the orginal IL code of the applic
 The unpacker uses Frida to place hooks to intercept the same components of the CLR (Method compilation, Token resolution, ...) but at a lower level than the packer. Moreover, it uses a stealthy approach by placing hooks not at the start or end of functions for example, but uses a smart hooking strategy to evade potential detection by the packer. 
 
 ## Requirements :
-The software runs in Windows > 10 environment with x86_64 architecture 
+The software runs in Windows > 10 environment with x86_64 architecture.
+
 
 ## Installation
 - Download the archive release_1.0_x64.zip from the release section and extract it anywhere in your environment.
+- Make sure the machine has Microsoft symbols set in the symbol path (via for example) : 
+```txt
+set _NT_SYMBOL_PATH=symsrv*symsrv.dll*C:\symbols*http://msdl.microsoft.com/download/symbols
+```
 
 ## Usage
 - Create a directory called `executables` and add your sample and its dependencies to it. 
@@ -82,6 +99,9 @@ You can generate the documentation server by downloading the `docs` folder and r
 ## Contributions
 Become part of our community and engage with us on any topic through GitHub Discussions. 
 Should you encounter difficulties with Frida-Jit-unPacker or wish to provide feedback, feel free to open an issue. Additional details can be found in our contribution documentation.
+
+## Telemetry
+The tool collects basic telemetry regarding execution in order to improve its efficiency in the future. (file size, header information, file hashes ...). Therefore, the software requires an active Internet connection.
 
 ## More about Imperva
 
