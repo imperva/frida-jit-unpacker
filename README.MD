@@ -29,7 +29,7 @@ We assume here that the packer saves encrypted the orginal IL code of the applic
 The unpacker uses Frida to place hooks to intercept the same components of the CLR (Method compilation, Token resolution, ...) but at a lower level than the packer. Moreover, it uses a stealthy approach by placing hooks not at the start or end of functions for example, but uses a smart hooking strategy to evade potential detection by the packer. 
 
 ## Requirements :
-The software runs in Windows > 10 environment with x86_64 architecture. The sample should be 64 bits.
+The software runs in Windows > 10 environment with x86_64 architecture. It is design to process 64 bit applications. In case you have a 32 bit application, you should try to run it as a 64 bit application (.NET directory -> Flags -> 32 bit required unchecked and File Header -> Characteristics -> 32 bit word machine checked if needed).
 
 
 ## Installation
