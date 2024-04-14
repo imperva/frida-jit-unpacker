@@ -33,7 +33,7 @@ The software runs in Windows > 10 environment with x86_64 architecture. It is de
 
 
 ## Installation
-- Download the archive release_1.0_x64.zip from the release section and extract it anywhere in your environment.
+- Download the archive release_X.X_x64.zip from the release section and extract it anywhere in your environment.
 - Make sure the machine has Microsoft symbols set in the symbol path (via for example) : 
 ```txt
 set _NT_SYMBOL_PATH=symsrv*symsrv.dll*C:\symbols*http://msdl.microsoft.com/download/symbols
