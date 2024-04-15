@@ -91,7 +91,7 @@ This tool should be used solely for legal and ethical purposes.
 2. It's obviously recommended to run any analysis in a dedicated VM sandbox for malware analysis. Imperva is not responsible for any consequence of the usage of the tool. 
 
 ## Documentation
-You can generate the documentation server by downloading the `docs` folder and running the following in the `_site` folder :
+You can start the documentation server by downloading the `docs` folder and running the following in the `_site` folder :
 ```txt
 > python -m http.server 8000
 ```
