@@ -13,6 +13,7 @@ redirect_from:
 The Frida-Jit-unPacker aims at helping researchers and analysts understand the behavior of malicious .NET packed samples in order to provide a mitigation. 
 This tool uses the [Frida instrumentation toolkit](https://frida.re/) to inject scripts into [the CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime) and manipulate the behavior of the .NET executable to retrieve the original code.
 More precisely, this tool intercepts the communication between the CLR components in order retrieve the original IL code of a packed assembly.
+To stay under the radar, the tool doesn't use the prepareMethod function. Therefore, only methods that compiled during execution will be recovered.
 
 If you liked this software, please, add a GitHub star ⭐️, thank you !
 
@@ -24,3 +25,7 @@ The unpacker runs the sample and uses Frida to place hooks and intercept the com
 
 # Smart Hooking Strategy
 The program uses Frida to disassemble CLR functions and place hooks as far as possible from packer monitoring points (start address of the function for example) while still collecting their input.
+
+# Acknowledgement
+We gratefully acknowledge the contributions of the teams responsible for the development of dnSpy, CFF Explorer, JITM, JitHook, Frida, pefile and dotnetfile. These tools / projects have been very helpful to our work.
+
